@@ -1,0 +1,9 @@
+
+  <div class="contact contact-index">
+   <h2 style="color:orange">Index </h2>
+   <ul>
+     <li ng-repeat="contact in contacts">
+       <a ui-sref="show({id:contact._id})">{{contact.name}}</a>
+     </li>
+   </ul>
+  </div>

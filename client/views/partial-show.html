@@ -1,0 +1,17 @@
+<div class="container contact contact-show">
+ <div class="contact-menu">
+<a class="btn btn-default" href="/index" style="float:left;margin-right:10px;">Back</a>
+<a class="btn btn-default" ui-sref="edit({id:contact._id})">Edit </a>
+<form ng-click="delete(contact._id);">
+ <a class="btn btn-default" href="#">Delete</a>
+  </form>
+ <div>
+ <h2 style="color:orange;">Show</h2>
+ <h3>{{contact.name}}</h3>
+ <div>
+  <label>Email </label><span> {{contact.email}}</span>
+ </div>
+ <div>
+  <label>Phone </label><span> {{contact.phone}}</span>
+ </div>
+</div>
